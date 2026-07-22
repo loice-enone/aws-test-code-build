@@ -1,9 +1,11 @@
 import unittest
-from app import say_hello
+from app import say_hello 
 
-class testapp(unittest.TestCase):
+
+class TestApp(unittest.TestCase):
     def test_say_hello(self):
-        self.assertEqual(say_hello("aws"), "hello, aws")
+        self.assertEqual(say_hello("AWS"), "Hello, AWS")
         
-if __nme== "__main__":
-    unittest.main()
+        
+if __name__ == "__main__":
+    unittest.main()        
